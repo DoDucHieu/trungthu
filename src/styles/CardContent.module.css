@@ -1,0 +1,31 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.moon {
+  width: 200px;
+  height: 200px;
+}
+
+.textContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textLove{
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  color: #222222;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.textHeart{
+  font-size: 1.5rem;
+}
+  
