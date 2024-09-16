@@ -1,16 +1,19 @@
 .musicPlayer {
     text-align: center;
-    background-color: #ffe4b5;
+    background: #667db6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
   }
   
   .songInfo {
     font-size: 1.2rem;
-    color: #ff6f61;
+    color: #ffffff;
     margin-bottom: 15px;
+    margin-top: 15px;
   }
   
   .controls {
@@ -20,17 +23,28 @@
   }
   
   .button {
-    padding: 10px 15px;
-    background-color: #ff6f61;
+    width: 40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #AAFFA9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+
+  .icon{
+    width: 20px;
+    height: 20px;
+  }
   
   .button:hover {
-    background-color: #ff3d3d;
+    background-color: #3d61ff;
   }
   

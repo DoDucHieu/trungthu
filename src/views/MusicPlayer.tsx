@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
 import styles from '@/styles/MusicPlayer.module.css';
+import React, { useEffect, useRef, useState } from 'react';
 
 const songs = [
     {

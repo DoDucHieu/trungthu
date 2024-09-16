@@ -8,12 +8,12 @@ type Props = {
 const CountdownTimer = ({setIsReached}:Props) : React.ReactElement=> {
   const calculateTimeLeft = () => {
     const targetDate = new Date('2024-09-17T00:00:00');
-    // const targetDate = new Date('2024-09-16T00:41:30');
+    // const targetDate = new Date('2024-09-16T15:56:30');
 
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
-    console.log("diff: ",  Math.floor(difference/1000));
-    if(Math.floor(difference/1000)===0) setIsReached(true)
+    // console.log("diff: ",  Math.floor(difference/1000));
+    if(Math.floor(difference/1000) <= 0) setIsReached(true)
     let timeLeft = {
       days: 0,
       hours: 0,
